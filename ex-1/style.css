@@ -166,5 +166,139 @@ h3 {
   top: 230px;
   left: 0px;
 }
-
-/* Start coding here */
+@media (max-width: 375px) {
+  * {
+    min-width: 0; /* Reset any global min-width */
+  }
+  body {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .topic {
+    width: 327px;
+    height: 80px;
+    margin-top: 31.2px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    line-height: 40px;
+    margin-bottom: 0.2em;
+    color: #183b56;
+  }
+  .line {
+    display: inline-block;
+    background: linear-gradient(
+      to bottom,
+      transparent 60%,
+      #ff8345 60%,
+      #ff8345 100%
+    );
+    border-radius: 4px;
+    padding: 0 2px;
+  }
+  .categories {
+    width: 100%;
+    min-width: 333px;
+    max-width: 375px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .row-1,
+  .row-2 {
+    width: 333px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+  }
+  .job-item,
+  .job-more {
+    width: 92vw;
+    max-width: 333px;
+    min-width: unset;
+    height: auto;
+    margin: 10px 0;
+    padding: 16px 12px 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    box-sizing: border-box;
+  }
+  .job-more {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 12px;
+  }
+  .icon,
+  .icon2 {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 8px;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .pic img {
+    width: 32px;
+    height: 32px;
+  }
+  h2 {
+    position: static;
+    font-size: 1.05rem;
+    margin: 0 0 2px 0;
+    padding: 0;
+    color: #183b56;
+    text-align: left;
+  }
+  h4 {
+    position: static;
+    font-size: 0.95rem;
+    margin: 0 0 0 0;
+    padding: 0;
+    color: #5a7184;
+    text-align: left;
+  }
+  h3 {
+    position: static;
+    font-size: 1.1rem;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .arrow,
+  .explore-more-arrow {
+    position: static;
+    margin-top: 8px;
+    margin-left: 0;
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+  }
+  .first-line,
+  .second-line,
+  .third-line,
+  .fourth-line {
+    display: none;
+  }
+}
