@@ -167,4 +167,209 @@ h3 {
   left: 0px;
 }
 
+
 /* Start coding here */
+
+/* Mobile Responsive - max-width 375px */
+@media (max-width: 375px) {
+  * {
+    min-width: 0; /* Reset any global min-width */
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Topic section adjustments */
+  .topic {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 3vh;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  /* Categories container */
+  .categories {
+    width: 100%;
+    min-width: 333px;
+    max-width: 375px;
+    height: auto;
+    padding: 0 21px; /* (375-333)/2 = 21px to center content */
+    margin: 0 auto;
+  }
+
+  /* Change layout to column for mobile */
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Job items adjustments */
+  .job-item,
+  .job-more {
+    position: relative;
+    width: 100%;
+    max-width: 333px;
+    height: auto;
+    min-height: 200px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  /* Icon adjustments */
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .pic img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Typography adjustments */
+  h2 {
+    font-size: 1.1rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 70px;
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 5px;
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  /* Arrow positioning */
+  .arrow {
+    position: relative;
+    top: auto;
+    bottom: 20px;
+    right: 10px;
+    left: 270px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .arrow img {
+    width: 55%;
+    height: 55%;
+  }
+
+  /* Job more section adjustments */
+  .job-more {
+    position: relative;
+    padding: 20px 50px 20px 20px; /* เพิ่ม padding ด้านขวาสำหรับลูกศร */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+  }
+
+  h3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  /* Add line breaks for job-more text */
+  .job-more h3 {
+    white-space: pre-line;
+    text-align: left;
+    width: calc(100% - 40px); /* ป้องกันไม่ให้ข้อความชนกับลูกศร */
+  }
+
+  .explore-more-arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Hide decorative lines on mobile
+  .first-line,
+  .second-line,
+  .third-line,
+  .fourth-line {
+    position: absolute;
+    opacity: 0.5;
+  } */
+
+  /* Adjust line positions for mobile */
+  .first-line {
+    bottom: 140px;
+    left: 65px;
+    width: 60%;
+    height: auto;
+  }
+
+  .second-line {
+    bottom: 110px;
+    left: 40px;
+    width: 60%;
+    height: auto;
+  }
+
+  .third-line {
+    top: 125px;
+    left: 0px;
+    width: 50%;
+    height: auto;
+  }
+
+  .fourth-line {
+    top: 165px;
+    left: 0px;
+    width: 50%;
+    height: auto;
+  }
+
+
+}
+
+/* Additional media query for slightly larger phones */
+@media (min-width: 200px) and (max-width: 374px) {
+  .categories {
+    max-width: 480px;
+    padding: 0 20px;
+  }
+
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-item,
+  .job-more {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
